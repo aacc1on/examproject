@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "850c37ed-983b-4877-a980-300cd2630663",
+		"name": "exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45048999"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"hrach\",\r\n    \"password\": \"password\",\r\n    \"email\": \"email@gmail.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhaGFreWFuZ21haWwuY29tIiwicGFzc3dvcmQiOiJzYWhha3lhbiIsInJvbGUiOiJmYWxzZSIsImlhdCI6MTc1Mjc4Mjg2NSwiZXhwIjoxNzUyNzg2NDY1fQ.49cmebRYUdIKceUOl0KfxKwUoJ7Fm7eZ0_MURA9Bt8k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"email\",\r\n    \"password\": \"password\",\r\n    \"username\": \"hrach\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/posts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjY4N2E4NWE4MWUyYjFkMmNlNWQ5N2ZhNiIsImVtYWlsIjoiZW1haWwiLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiaWF0IjoxNzUyODYwMjgyLCJleHAiOjE3NTI4NjM4ODJ9.O5TcwIAcJwo5aWBiP1W6O0WsBBoNRSwhm06ch6T7kHE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"title\": \"hello\",\r\n   \"content\": \"world\",\r\n   \"userId\": \"687a85a81e2b1d2ce5d97fa6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
