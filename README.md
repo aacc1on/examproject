@@ -17,3 +17,6 @@ Comments:
 
 write env file 
   env.example
+
+
+NO GPT
